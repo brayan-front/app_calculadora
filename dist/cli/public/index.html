@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculadora - Calc Logic</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <div id="display" class="display">0</div>
+    <div class="keys">
+      <button class="btn clear" data-action="clear">C</button>
+      <button class="btn op" data-op="divide">÷</button>
+      <button class="btn op" data-op="multiply">×</button>
+      <button class="btn op" data-op="subtract">−</button>
+
+      <button class="btn num">7</button>
+      <button class="btn num">8</button>
+      <button class="btn num">9</button>
+      <button class="btn op" data-op="add">+</button>
+
+      <button class="btn num">4</button>
+      <button class="btn num">5</button>
+      <button class="btn num">6</button>
+      <button class="btn equals" data-action="equals">=</button>
+
+      <button class="btn num">1</button>
+      <button class="btn num">2</button>
+      <button class="btn num">3</button>
+      <button class="btn num zero">0</button>
+    </div>
+    <div id="error" class="error" aria-live="polite"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

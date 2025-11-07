@@ -1,0 +1,23 @@
+{
+  "name": "calc-logic",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc && xcopy src\\cli\\public\\*.html dist\\cli\\public\\ /Y && xcopy src\\cli\\public\\*.css dist\\cli\\public\\ /Y",
+    "start": "node dist/cli/public/server.js",
+    "dev": "ts-node src/cli/public/server.ts",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.0.0",
+    "@types/express": "^5.0.5",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.9.3",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
