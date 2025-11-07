@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "dist/main.js",
   "scripts": {
-    "build": "tsc && cp src/cli/public/*.html dist/cli/public/ && cp src/cli/public/*.css dist/cli/public/",
+    "build": "npx tsc && cp src/cli/public/*.html dist/cli/public/ && cp src/cli/public/*.css dist/cli/public/",
     "start": "node dist/cli/public/server.js",
     "dev": "ts-node src/cli/public/server.ts",
     "test": "jest"
